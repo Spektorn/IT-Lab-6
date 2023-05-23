@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <title>Django Public Blog - авторизация</title>
+    </head>
+    <body>
+        <div class="sign-in-form-wrapper">
+            <h1>Авторизация</h1>
+            <form class="sign-in-form" method="POST">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="Имя пользователя" value="{{ form.username }}">
+                <input type="password" name="password" placeholder="Пароль" value="{{ form.password }}">
+                <input type="submit" value="Войти">
+            </form>
+            <div class="sign-in-form-errors">
+                {{ form.errors }}
+            </div>
+        </div>
+    </body>
+</html>

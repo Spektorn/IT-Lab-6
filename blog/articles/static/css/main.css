@@ -1,0 +1,88 @@
+body {
+    background-color: #1abc9c;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+a {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header,
+.archive,
+.article,
+.post-form-wrapper,
+.sign-up-form-wrapper,
+.sign-in-form-wrapper {
+    width: 1080px; 
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+    padding: 18px 10px;
+}
+
+.one-post {
+    padding: 10px;
+}
+
+.article-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.article-author {
+    font-weight: bold;
+}
+
+.article-created-date {
+    font-style: italic;
+}
+
+.post-form,
+.sign-up-form,
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-form input,
+.post-form textarea,
+.sign-up-form input,
+.sign-in-form input {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.post-form textarea {
+    resize: none;
+    height: 240px;
+}
+
+.post-form-errors,
+.sign-up-form-errors,
+.sign-in-form-errors {
+    font-weight: bold;
+    color: #640404;
+}
